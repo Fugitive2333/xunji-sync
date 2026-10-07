@@ -10,6 +10,9 @@ def post(url, key, body, retries=4):
             r = urllib.request.urlopen(req, timeout=60); raw = r.read()
         except urllib.error.HTTPError as e:
             raw = e.read()
+        except Exception as e:
+            res = {"success": False, "res": "network error: %r" % e}
+            print(res); time.sleep(5); continue
         if raw[:2] == b"\x1f\x8b":
             raw = gzip.decompress(raw)
         try:
