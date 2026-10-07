@@ -23,4 +23,4 @@ jobs:
       - name: commit
         run: |
           git config user.name xunji-bot && git config user.email xunji-bot@users.noreply.github.com
-          git add data && (git diff --cached --quiet || git commit -m "pull $(date -u +%F)") && git push
+          git pull --rebase -q; git add data && (git diff --cached --quiet || git commit -m "pull $(date -u +%F)") && git push
