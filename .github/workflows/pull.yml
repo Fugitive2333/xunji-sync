@@ -1,0 +1,24 @@
+name: pull
+on:
+  schedule:
+    - cron: "53 14 * * *"   # 每天 22:53 新加坡时间
+  workflow_dispatch:
+    inputs:
+      days: { description: "拉最近几天", default: "4" }
+permissions: { contents: write }
+concurrency: { group: xunji, cancel-in-progress: false }
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/pull.py
+        env:
+          XUNJI_TRAIN_KEY: ${{ secrets.XUNJI_TRAIN_KEY }}
+          XUNJI_BODY_KEY: ${{ secrets.XUNJI_BODY_KEY }}
+          XUNJI_TPL_KEY: ${{ secrets.XUNJI_TPL_KEY }}
+          DAYS: ${{ github.event.inputs.days }}
+      - name: commit
+        run: |
+          git config user.name xunji-bot && git config user.email xunji-bot@users.noreply.github.com
+          git add data && (git diff --cached --quiet || git commit -m "pull $(date -u +%F)") && git push

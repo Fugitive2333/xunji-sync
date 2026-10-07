@@ -1,0 +1,19 @@
+name: write-templates
+on:
+  push:
+    paths: ["templates/payload.json"]
+  workflow_dispatch:
+permissions: { contents: write }
+concurrency: { group: xunji, cancel-in-progress: false }
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/write_templates.py
+        env:
+          XUNJI_TPL_KEY: ${{ secrets.XUNJI_TPL_KEY }}
+      - name: commit
+        run: |
+          git config user.name xunji-bot && git config user.email xunji-bot@users.noreply.github.com
+          git pull --rebase && git add data && (git diff --cached --quiet || git commit -m "write result") && git push

@@ -1,0 +1,498 @@
+{
+ "confirmed": true,
+ "mutation_id": "harry-split3-v1-20261007",
+ "upserts": [
+  {
+   "client_id": "harry-back-v1",
+   "name": "背 肩后",
+   "color": "#3B82F6",
+   "movements": [
+    {
+     "name": "绳索肩外旋",
+     "sets": [
+      {
+       "weight": 2,
+       "unit": "kg",
+       "reps": 12
+      },
+      {
+       "weight": 2,
+       "unit": "kg",
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "name": "跪姿弹力带划船",
+     "sets": [
+      {
+       "weight": 12,
+       "unit": "kg",
+       "reps": 12
+      },
+      {
+       "weight": 12,
+       "unit": "kg",
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "name": "坐姿划船",
+     "sets": [
+      {
+       "weight": 33,
+       "unit": "kg",
+       "reps": 10
+      },
+      {
+       "weight": 33,
+       "unit": "kg",
+       "reps": 10
+      },
+      {
+       "weight": 33,
+       "unit": "kg",
+       "reps": 10
+      },
+      {
+       "weight": 33,
+       "unit": "kg",
+       "reps": 10
+      }
+     ],
+     "progression": {
+      "start_reps": 10,
+      "reps_increment": 1,
+      "target_reps": 12,
+      "weight_increment": 2.5,
+      "reset_reps": 10
+     }
+    },
+    {
+     "name": "V-bar下拉",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ],
+     "progression": {
+      "start_reps": 10,
+      "reps_increment": 1,
+      "target_reps": 12,
+      "weight_increment": 2.5,
+      "reset_reps": 10
+     }
+    },
+    {
+     "name": "面拉",
+     "sets": [
+      {
+       "weight": 15,
+       "unit": "kg",
+       "reps": 12
+      },
+      {
+       "weight": 15,
+       "unit": "kg",
+       "reps": 12
+      },
+      {
+       "weight": 15,
+       "unit": "kg",
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 1.25,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "蝴蝶机反向飞鸟",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "绳索直臂下压",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "Y字绳索侧平举",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "name": "鸟狗式",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "client_id": "harry-chest-v1",
+   "name": "胸 肩",
+   "color": "#FF8A1F",
+   "movements": [
+    {
+     "name": "绳索肩外旋",
+     "sets": [
+      {
+       "weight": 2,
+       "unit": "kg",
+       "reps": 12
+      },
+      {
+       "weight": 2,
+       "unit": "kg",
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "name": "肩胛屈伸",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "name": "器械推胸",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ],
+     "progression": {
+      "start_reps": 10,
+      "reps_increment": 1,
+      "target_reps": 12,
+      "weight_increment": 2.5,
+      "reset_reps": 10
+     }
+    },
+    {
+     "name": "上斜器械推胸",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ],
+     "progression": {
+      "start_reps": 10,
+      "reps_increment": 1,
+      "target_reps": 12,
+      "weight_increment": 2.5,
+      "reset_reps": 10
+     }
+    },
+    {
+     "name": "蝴蝶机飞鸟",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "绳索侧平举（单边）",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 1.25,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "V-Bar 绳索下压",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "面拉",
+     "sets": [
+      {
+       "weight": 15,
+       "unit": "kg",
+       "reps": 15
+      },
+      {
+       "weight": 15,
+       "unit": "kg",
+       "reps": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "client_id": "harry-legs-v1",
+   "name": "腿 核心",
+   "color": "#22C55E",
+   "movements": [
+    {
+     "name": "爬坡走",
+     "sets": [
+      {
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "name": "泡沫轴髂胫束_ITB_松解",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ]
+    },
+    {
+     "name": "屈膝臀桥",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ]
+    },
+    {
+     "name": "弹力带末端膝盖伸展",
+     "sets": [
+      {
+       "reps": 15
+      },
+      {
+       "reps": 15
+      },
+      {
+       "reps": 15
+      }
+     ]
+    },
+    {
+     "name": "坐姿腿弯举",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "坐姿腿屈伸",
+     "sets": [
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      },
+      {
+       "reps": 12
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "坐姿髋内收",
+     "sets": [
+      {
+       "reps": 15
+      },
+      {
+       "reps": 15
+      },
+      {
+       "reps": 15
+      }
+     ],
+     "progression": {
+      "start_reps": 12,
+      "reps_increment": 1,
+      "target_reps": 15,
+      "weight_increment": 2.5,
+      "reset_reps": 12
+     }
+    },
+    {
+     "name": "腿举",
+     "sets": [
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      },
+      {
+       "reps": 10
+      }
+     ],
+     "progression": {
+      "start_reps": 10,
+      "reps_increment": 1,
+      "target_reps": 12,
+      "weight_increment": 5,
+      "reset_reps": 10
+     }
+    },
+    {
+     "name": "死虫",
+     "sets": [
+      {
+       "reps": 20
+      },
+      {
+       "reps": 20
+      }
+     ]
+    },
+    {
+     "name": "弹力带pallor推",
+     "sets": [
+      {
+       "reps": 20
+      },
+      {
+       "reps": 20
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "deletes": []
+}
