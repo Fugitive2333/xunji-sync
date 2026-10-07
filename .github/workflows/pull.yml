@@ -2,6 +2,8 @@ name: pull
 on:
   schedule:
     - cron: "53 14 * * *"   # 每天 22:53 新加坡时间
+  push:
+    paths: ["trigger/pull"]
   workflow_dispatch:
     inputs:
       days: { description: "拉最近几天", default: "4" }
@@ -17,7 +19,7 @@ jobs:
           XUNJI_TRAIN_KEY: ${{ secrets.XUNJI_TRAIN_KEY }}
           XUNJI_BODY_KEY: ${{ secrets.XUNJI_BODY_KEY }}
           XUNJI_TPL_KEY: ${{ secrets.XUNJI_TPL_KEY }}
-          DAYS: ${{ github.event.inputs.days }}
+          DAYS: ${{ github.event.inputs.days || (github.event_name == 'push' && '14') || '4' }}
       - name: commit
         run: |
           git config user.name xunji-bot && git config user.email xunji-bot@users.noreply.github.com
